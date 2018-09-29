@@ -19,3 +19,14 @@ a {
   z-index: 1;
   border-bottom: solid #eee 1.5px;
 }
+
+.footer {
+  background-color: #fff;
+  height: 50px;
+  align-items: center;
+  padding: 2.5px 10px 2.5px 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
