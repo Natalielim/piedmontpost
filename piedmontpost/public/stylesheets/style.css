@@ -1,6 +1,6 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Garamond", Serif;
 }
 
 a {
@@ -29,4 +29,5 @@ a {
   bottom: 0;
   width: 100%;
   z-index: 1;
+  border-top: solid #eee 1.5px;
 }
