@@ -16,6 +16,11 @@ router.get('/subscribe', (req, res, next) => {
   res.render('subscribe');
 });
 
+// GET advertise
+router.get('/advertise', (req, res, next) => {
+  res.render('advertise');
+});
+
 // GET contact
 router.get('/contact', (req, res, next) => {
   res.render('contact');
