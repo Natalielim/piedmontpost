@@ -8,24 +8,40 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <nav class="navbar">
+    <!-- <nav class="navbar fixed top">
       <a class="" href="/"><img class="logo" src = "../images/PiedmontPostLogo.jpg" height=35px></a>
-      <ul class="justify-content-center">
+      <ul class="justify-content-center navbar-nav">
         <li class="nav-item">
-          <a href="/underwriters">Underwriters</a>
+          <a class="nav-link" href="/underwriters">Underwriters</a>
         </li>
-        <li>
-          <a href="/subscribe">Subscribe</a>
+        <li class="nav-item">
+          <a class="nav-link" href="/subscribe">Subscribe</a>
         </li>
-        <li>
-          <a href="/advertise">Advertise</a>
+        <li class="nav-item">
+          <a class="nav-link" href="/advertise">Advertise</a>
         </li>
-        <li>
-          <a href="/contact">Contact</a>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
         </li>
       </ul>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/"><img class="logo" src = "../images/PiedmontPostLogo.jpg" height=35px></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <!-- <span class="sr-only">(current)</span> -->
+          <a class="nav-item nav-link active" href="/underwriters">Underwriters</a>
+          <a class="nav-item nav-link" href="/subscribe">Subscribe</a>
+          <a class="nav-item nav-link" href="/advertise">Advertise</a>
+          <a class="nav-item nav-link" href="/contact">Contact</a>
+        </div>
+      </div>
     </nav>
-    
+
     <main>
       {{{body}}}
     </main>
