@@ -20,14 +20,35 @@ a {
   border-bottom: solid #eee 1.5px;
 }
 
-.footer {
-  background-color: #fff;
+header {
+  background-color: #F0F8FF;
+  padding: 140px 0 100px;
+  background-image: url("../images/Piedmont.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.first-section {
+  background-color: white;
+
+}
+
+.section {
+  padding: 60px 0 40px;
+}
+
+footer {
+  /* background-color: #fff;
   height: 50px;
   align-items: center;
   padding: 2.5px 10px 2.5px 10px;
   /* position: absolute;
   bottom: 0; */
-  width: 100%;
+  /* width: 100%;
   z-index: 1;
-  border-top: solid #eee 1.5px;
+  border-top: solid #eee 1.5px; */
+  background-color: #eee;
+  padding: 35px 0;
 }
