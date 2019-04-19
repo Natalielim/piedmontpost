@@ -1,3 +1,7 @@
+<!-- Load Stripe.js on your website. -->
+<!-- <script src="https://checkout.stripe.com/checkout.js"</script> -->
+<script src="https://js.stripe.com/v3"></script>
+
 <div>
   <div class="text-center">
     <h1>Subscriptions</h1>
@@ -6,8 +10,10 @@
   </div>
 
   <h2 class="text-center">Underwriting Categories</h2>
-  <div class="card-columns text-center">
-      <div class="card border-dark">
+  <div class="text-center">
+    <!-- <div class="card-columns text-center"> -->
+
+      <!-- <div class="card border-dark">
         <div class="card-body">
           <h5 class="card-title">Founders Circle</h5>
           <p class="card-text">over $500</p>
@@ -34,19 +40,55 @@
           <p class="card-text">$75 - $149</p>
           <a href="#" class="btn btn-dark">Subscribe</a>
         </div>
-      </div>
-      <div class="card border-dark">
+      </div> -->
+      <div style="margin: 1em" class="card border-dark">
         <div class="card-body">
           <h5 class="card-title">Standard Subscription</h5>
           <p class="card-text">$75</p>
-          <a href="#" class="btn btn-dark">Subscribe</a>
+          <button class="btn btn-dark" id="checkout-standard" role="link">Subscribe</button>
+          <div id="error-message"></div>
+          <script>
+            var stripe = Stripe('pk_test_lmInY2xqjlYr8Kg5EwkQ3WD0');
+            var checkoutButton = document.getElementById('checkout-standard');
+            checkoutButton.addEventListener('click', function () {
+              stripe.redirectToCheckout({
+                items: [{sku: 'sku_EuZdTBc61JhAx3', quantity: 1}],
+                successUrl: 'https://google.com',
+                cancelUrl: 'https://google.com',
+              })
+              .then(function (result) {
+                if (result.error) {
+                  var displayError = document.getElementById('error-message');
+                  displayError.textContent = result.error.message;
+                }
+              });
+            });
+          </script>
         </div>
       </div>
-      <div class="card border-dark">
+      <div style="margin: 1em" class="card border-dark">
         <div class="card-body">
           <h5 class="card-title">Out of Town Subscription</h5>
           <p class="card-text">$125</p>
-          <a href="#" class="btn btn-dark">Subscribe</a>
+          <button class="btn btn-dark" id="checkout-outoftown" role="link">Subscribe</button>
+          <div id="error-message"></div>
+          <script>
+            var stripe = Stripe('pk_test_lmInY2xqjlYr8Kg5EwkQ3WD0');
+            var checkoutButton = document.getElementById('checkout-outoftown');
+            checkoutButton.addEventListener('click', function () {
+              stripe.redirectToCheckout({
+                items: [{sku: 'sku_EuZh3FiuNDSZUu', quantity: 1}],
+                successUrl: 'https://google.com',
+                cancelUrl: 'https://google.com',
+              })
+              .then(function (result) {
+                if (result.error) {
+                  var displayError = document.getElementById('error-message');
+                  displayError.textContent = result.error.message;
+                }
+              });
+            });
+          </script>
         </div>
       </div>
     </div>
