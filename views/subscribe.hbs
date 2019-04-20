@@ -53,8 +53,8 @@
             checkoutButton.addEventListener('click', function () {
               stripe.redirectToCheckout({
                 items: [{sku: 'sku_EuZdTBc61JhAx3', quantity: 1}],
-                successUrl: 'https://google.com',
-                cancelUrl: 'https://google.com',
+                successUrl: 'https://piedmontpost.herokuapp.com/subscribe',
+                cancelUrl: 'https://piedmontpost.herokuapp.com/subscribe',
               })
               .then(function (result) {
                 if (result.error) {
@@ -78,8 +78,8 @@
             checkoutButton.addEventListener('click', function () {
               stripe.redirectToCheckout({
                 items: [{sku: 'sku_EuZh3FiuNDSZUu', quantity: 1}],
-                successUrl: 'https://google.com',
-                cancelUrl: 'https://google.com',
+                successUrl: 'https://piedmontpost.herokuapp.com/subscribe',
+                cancelUrl: 'https://piedmontpost.herokuapp.com/subscribe',
               })
               .then(function (result) {
                 if (result.error) {
