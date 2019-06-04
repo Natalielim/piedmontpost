@@ -53,3 +53,17 @@ footer {
   padding: 35px 0;
   margin: 0!important;
 }
+
+#PiedmontPostLogo {
+   height: 100px;
+   width: 725px;
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%);
+}
+
+.navbar-nav .navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
