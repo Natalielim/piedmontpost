@@ -23,7 +23,7 @@ a {
 header {
   background-color: #F0F8FF;
   padding: 140px 0 100px;
-  background-image: url("../images/post/cityhall.jpg");
+  background-image: url("../images/cityhall.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -52,4 +52,8 @@ footer {
   background-color: #eee;
   padding: 15px 0;
   margin: 0!important;
+}
+
+.jumbotron {
+  background: transparent;
 }
