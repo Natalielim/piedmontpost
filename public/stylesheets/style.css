@@ -57,3 +57,7 @@ footer {
 .jumbotron {
   background: transparent;
 }
+
+.jumbotron-text {
+  font-size: 1.15em;
+}
