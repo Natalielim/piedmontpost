@@ -31,13 +31,21 @@ a {
 }
 
 #header {
-  background-color: #F0F8FF;
-  padding: 220px 0 150px;
+  padding: 250px 0 300px;
   background-image: url("../images/post/PCA in December.JPG");
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   color: white;
+  background-attachment: fixed;
+}
+
+#header h1, #header p {
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
 .first-section {
@@ -66,6 +74,7 @@ footer {
 
 .jumbotron {
   background: transparent;
+  padding: 60px 10% 40px;
 }
 
 .jumbotron-text {
