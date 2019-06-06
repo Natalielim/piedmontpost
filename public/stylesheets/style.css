@@ -7,6 +7,16 @@ a {
   color: #00B7FF;
 }
 
+.jumbotron {
+  min-height: 300px;
+  max-height: 500px;
+  width: 101vw;
+  margin-top: -4em;
+  margin-bottom: 2em;
+  margin-left: calc(-50vw + 50% - 8px);
+  position: relative;
+}
+
 .navbar {
   background-color: #fff;
   height: 50px;
