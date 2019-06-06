@@ -61,3 +61,13 @@ footer {
 .jumbotron-text {
   font-size: 1.15em;
 }
+
+#PCA {
+  background-color: #F0F8FF;
+  padding: 100px 0;
+  background-image: url("../images/post/PCA in December.JPG");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
+}
