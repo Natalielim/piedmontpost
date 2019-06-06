@@ -31,7 +31,7 @@ a {
 }
 
 #header {
-  padding: 250px 0 300px;
+  padding: 270px 0 300px;
   background-image: url("../images/post/PCA in December.JPG");
   background-size: cover;
   background-position: center;
@@ -58,14 +58,6 @@ a {
 }
 
 footer {
-  /* background-color: #fff;
-  height: 50px;
-  align-items: center;
-  padding: 2.5px 10px 2.5px 10px;
-  /* position: absolute;
-  bottom: 0; */
-  /* width: 100%;
-  z-index: 1;*/
   border-top: solid #eee 1.5px;
   background-color: #fff;
   padding: 15px 0;
@@ -82,11 +74,15 @@ footer {
 }
 
 #PCA {
-  background-color: #F0F8FF;
   padding: 100px 0;
-  background-image: url("../images/post/PCA in December.JPG");
+  background-image: url("../images/cityhall.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
