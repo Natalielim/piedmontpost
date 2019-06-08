@@ -91,7 +91,10 @@ footer {
   padding: 0 25% 40px;
 }
 
-#navbarTogglerDemo02 {
+.navbar-collapse {
   background-color: #fff;
-  padding: 2em;
+}
+
+.nav-item {
+  padding: 0 .25em;
 }
