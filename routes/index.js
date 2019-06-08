@@ -31,4 +31,9 @@ router.get('/contact', (req, res, next) => {
   res.render('contact');
 });
 
+// GET delivery
+router.get('/delivery', (req, res, next) => {
+  res.render('delivery');
+});
+
 module.exports = router;
