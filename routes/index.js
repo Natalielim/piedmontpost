@@ -16,9 +16,14 @@ router.get('/subscribe', (req, res, next) => {
   res.render('subscribe');
 });
 
-// GET subscribe
+// GET pay
 router.get('/pay', (req, res, next) => {
   res.render('pay');
+});
+
+// GET subscribe
+router.get('/success', (req, res, next) => {
+  res.render('success');
 });
 
 // GET advertise

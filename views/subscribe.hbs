@@ -25,6 +25,31 @@
             checkoutButton.addEventListener('click', function () {
               stripe.redirectToCheckout({
                 items: [{sku: 'sku_EuZdTBc61JhAx3', quantity: 1}],
+                successUrl: 'https://piedmontpost.herokuapp.com/success',
+                cancelUrl: 'https://piedmontpost.herokuapp.com/subscribe',
+              })
+              .then(function (result) {
+                if (result.error) {
+                  var displayError = document.getElementById('error-message');
+                  displayError.textContent = result.error.message;
+                }
+              });
+            });
+          </script>
+        </div>
+      </div>
+      <div style="margin: 1em" class="card border-dark">
+        <div class="card-body">
+          <h5 class="card-title">Publisher's Circle</h5>
+          <p class="card-text">$250</p>
+          <button class="btn btn-dark" id="checkout-publisherscircle" role="link">Subscribe</button>
+          <div id="error-message"></div>
+          <script>
+            var stripe = Stripe('pk_test_lmInY2xqjlYr8Kg5EwkQ3WD0');
+            var checkoutButton = document.getElementById('checkout-publisherscircle');
+            checkoutButton.addEventListener('click', function () {
+              stripe.redirectToCheckout({
+                items: [{sku: 'sku_FDJfY2bOGSY5bv', quantity: 1}],
                 successUrl: 'https://piedmontpost.herokuapp.com/subscribe',
                 cancelUrl: 'https://piedmontpost.herokuapp.com/subscribe',
               })
@@ -50,6 +75,81 @@
             checkoutButton.addEventListener('click', function () {
               stripe.redirectToCheckout({
                 items: [{sku: 'sku_EuZh3FiuNDSZUu', quantity: 1}],
+                successUrl: 'https://piedmontpost.herokuapp.com/subscribe',
+                cancelUrl: 'https://piedmontpost.herokuapp.com/subscribe',
+              })
+              .then(function (result) {
+                if (result.error) {
+                  var displayError = document.getElementById('error-message');
+                  displayError.textContent = result.error.message;
+                }
+              });
+            });
+          </script>
+        </div>
+      </div>
+      <div style="margin: 1em" class="card border-dark">
+        <div class="card-body">
+          <h5 class="card-title">Founder's Circle</h5>
+          <p class="card-text">$500</p>
+          <button class="btn btn-dark" id="checkout-founderscircle" role="link">Subscribe</button>
+          <div id="error-message"></div>
+          <script>
+            var stripe = Stripe('pk_test_lmInY2xqjlYr8Kg5EwkQ3WD0');
+            var checkoutButton = document.getElementById('checkout-founderscircle');
+            checkoutButton.addEventListener('click', function () {
+              stripe.redirectToCheckout({
+                items: [{sku: 'sku_FDJcLXQJ5b1Iqd', quantity: 1}],
+                successUrl: 'https://piedmontpost.herokuapp.com/subscribe',
+                cancelUrl: 'https://piedmontpost.herokuapp.com/subscribe',
+              })
+              .then(function (result) {
+                if (result.error) {
+                  var displayError = document.getElementById('error-message');
+                  displayError.textContent = result.error.message;
+                }
+              });
+            });
+          </script>
+        </div>
+      </div>
+      <div style="margin: 1em" class="card border-dark">
+        <div class="card-body">
+          <h5 class="card-title">Press Club</h5>
+          <p class="card-text">$150</p>
+          <button class="btn btn-dark" id="checkout-pressclub" role="link">Subscribe</button>
+          <div id="error-message"></div>
+          <script>
+            var stripe = Stripe('pk_test_lmInY2xqjlYr8Kg5EwkQ3WD0');
+            var checkoutButton = document.getElementById('checkout-pressclub');
+            checkoutButton.addEventListener('click', function () {
+              stripe.redirectToCheckout({
+                items: [{sku: 'sku_FDJeUs1Cwo8JPD', quantity: 1}],
+                successUrl: 'https://piedmontpost.herokuapp.com/subscribe',
+                cancelUrl: 'https://piedmontpost.herokuapp.com/subscribe',
+              })
+              .then(function (result) {
+                if (result.error) {
+                  var displayError = document.getElementById('error-message');
+                  displayError.textContent = result.error.message;
+                }
+              });
+            });
+          </script>
+        </div>
+      </div>
+      <div style="margin: 1em" class="card border-dark">
+        <div class="card-body">
+          <h5 class="card-title">Other Amount</h5>
+          <p class="card-text">$?</p>
+          <button class="btn btn-dark" id="checkout-pressclub" role="link">Subscribe</button>
+          <div id="error-message"></div>
+          <script>
+            var stripe = Stripe('pk_test_lmInY2xqjlYr8Kg5EwkQ3WD0');
+            var checkoutButton = document.getElementById('checkout-pressclub');
+            checkoutButton.addEventListener('click', function () {
+              stripe.redirectToCheckout({
+                items: [{sku: 'sku_FDJeUs1Cwo8JPD', quantity: 1}],
                 successUrl: 'https://piedmontpost.herokuapp.com/subscribe',
                 cancelUrl: 'https://piedmontpost.herokuapp.com/subscribe',
               })
